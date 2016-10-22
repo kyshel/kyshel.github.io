@@ -5,7 +5,7 @@ title: Kyshel - Cause you're the sky,
 
 # {{ page.title }}
 
-## New Posts
+### New Posts
 
 <ul>
   {% for post in site.posts %}
