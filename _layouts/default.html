@@ -3,9 +3,17 @@
 <head>
   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
   <title>{{ page.title }}</title>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/2.4.0/github-markdown.min.css">
+  <style type="text/css">
+  #content{
+    width: 700px;
+    margin: 40px auto;
+  }
+  </style>
 </head>
 <body>
-  <h1> this is kyshel's site </h1>
+  <div id ="content" class="markdown-body">
   {{ content }}
+  </div>
 </body>
 </html>
