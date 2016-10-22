@@ -2,7 +2,7 @@
 layout: default
 title: Kyshel - Cause you're the sky,
 ---
-<h2>{{ page.title }}</h2>
+# {{ page.title }}
 <p>New Posts</p>
 <ul>
   {% for post in site.posts %}
