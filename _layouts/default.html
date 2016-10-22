@@ -12,12 +12,18 @@
     .content{
       margin-top:10px;
     }
+    .index-pic {
+    position: absolute;
+    top: 0;
+    right: 100%;
+    border-radius: 4px;
+    }
   </style>
 </head>
 <body>
   <div class="wrapper">
     <div class="header">  
-      <a href="/"><img src="https://raw.githubusercontent.com/kyshel/file/master/imgs/kyshel-mark.png" width="100px"></a>
+      <a href="/"><img src="https://raw.githubusercontent.com/kyshel/file/master/imgs/kyshel-mark.png" class="index-pic" width="100px"></a>
     </div>
     <div class="content markdown-body">
       {{ content }}
