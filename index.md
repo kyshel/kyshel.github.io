@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Kyshel - Cause you're the sky,
+title: Kyshel - Cause you're the sky ~
 ---
 
 # {{ page.title }}
