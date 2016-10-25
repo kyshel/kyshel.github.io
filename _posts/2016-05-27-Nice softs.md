@@ -1,7 +1,6 @@
 ---
-layout:default
+layout: default
 ---
-
 
 # Nice software 
 
