@@ -1,0 +1,18 @@
+---
+layout:default
+---
+
+
+When Install visual studio 2015, an error occurred:
+
+To fix this, follow steps below:
+
+1. click *close* or *restart* button
+2. uninstall **MS VC++ 2015 Redistributables** in **Programs and Features**
+3. download and install this file: [Visual C++ Redistributable for Visual Studio 2015](https://www.microsoft.com/en-us/download/details.aspx?id=48145 )
+4. restart the Visual Studio 2015 installation
+
+Install will be success.
+
+
+*This passage is made by [kyshel](http://kyshel.com), Hope it's useful to U.*
