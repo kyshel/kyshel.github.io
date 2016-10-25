@@ -1,3 +1,7 @@
+---
+layout: default
+---
+
 #One key to save and run remote python code 
 
 ###Condition
