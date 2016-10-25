@@ -3,9 +3,9 @@ layout: default
 ---
 
 
-#One key to save and run remote python code 
+# One key to save and run remote python code 
 
-###Condition
+### Condition
 - Local PC:      Windows 8.1
 - Remote Server: CentOS 7.0 
 - Remote Service: Samba (Tutorial click here)
@@ -18,7 +18,7 @@ So, I want to find a simple way to debug remote python code.
 
 The function I want to acheive is, press one key, code will compile and run, I can see the result or error message, like a simple IDE(Integrate Develop Environment).
 
-###How to do it?
+### How to do it?
 It is easy to do this, all the thing that you need is a small soft: **AutoHotKey**.
 Follow some simple steps as below:
 
@@ -52,13 +52,13 @@ putty_run(){
 }	
 </pre>
 
-###Have a try
+### Have a try
 1. When you done, double click save_run.ahk, then you can see a green icon in taskbar:
 2. open the putty and connect to server, cd to ~, touch t.py
 3. open the file in samba shared folders with sublimetext 
 4. press F5, then you can see result in putty
 
-###Why I do this?
+### Why I do this?
 Maybe you think I am walking a far way to the target, cause you can install python in windows and everything is very simple.
 
 But, I prefer original things, I always think that running python code in linux will robust. When I debug done, I can put it to use instantly in my remoe server, there is no compatible problem. 
@@ -69,18 +69,18 @@ I like running code in shell. So even in windows, I just only want to modify cod
 
 I did not use vim cause it's a little hard to walk in door, and SublimeText's sexy face attracted me(Feel myself a bitch *.*), I do not want to loose the mouse in addtion(So you love the little mouse, I think you need a cat ~.~).
 
-###Leading Actor
+### Leading Actor
 Last let's see the leading actor today - AutoHotKey
 
 I call it window's shell script ,like the shell script in linux. Cause I can do many auto things by it. It's a big tool to me and it helped me a lot. If you are interested to this software, I recommend you see this post:
 
 
 
-###Some tips:
+### Some tips:
 1. Samba's config is vital, or security issues will happen.
 2. Set two LED display is better, then you can edit in one, show results in another.
 
-###About
+### About
 This post is created by [kyshel](http://kyshel.com)
 
 If you have any advice, comment below or leave me a message.
