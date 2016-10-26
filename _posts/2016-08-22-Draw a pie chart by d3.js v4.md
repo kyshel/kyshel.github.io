@@ -13,9 +13,7 @@ Like this:
 # Code
 
   <canvas width="300" height="300" id="pad"></canvas>
-
   <script type="text/javascript">
-
   var data = [1, 1, 2, 3, 5, 8, 13];
 
   var canvas = document.getElementById("pad"),
