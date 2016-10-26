@@ -8,9 +8,6 @@ layout: default
 <iframe src="https://kyshel.github.io/GistLive/raw/?id=8cb1aaffc6b7111a9dcf00785e9eb175" scrolling="no" style="height: 300px;width:300px"></iframe>
 
 ## Code
-
-
-
     <canvas width="300" height="300" id="pad"></canvas>
     <script type="text/javascript">
 
@@ -37,14 +34,11 @@ layout: default
         .innerRadius(radius - 20)
         .context(context);
 
-
-
     var pie = d3.pie();
     var arcs = pie(data);
 
     // move to center
     context.translate(width / 2, height / 2);
-
 
     // pie
     context.globalAlpha = 0.5;
@@ -64,20 +58,17 @@ layout: default
         context.fillText(data[i], c[0], c[1]);
     });
 
-
     </script>
     <style>
         canvas {
-        padding: 0;
-        margin: auto;
-        display: block;
-
-
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
+            padding: 0;
+            margin: auto;
+            display: block;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
         }
     </style>
 
