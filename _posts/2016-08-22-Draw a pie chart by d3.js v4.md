@@ -1,3 +1,8 @@
+---
+layout: default
+---
+
+# Example
 Draw a pie chart by d3.js v4.
 Like this:
 
@@ -5,54 +10,75 @@ Like this:
 
 
 
-Code:
-<pre>&lt;canvas width="300" height="300" id="pad"&gt;&lt;/canvas&gt;
+# Code
 
-&lt;script type="text/javascript"&gt; 
-var data = [1, 1, 2, 3, 5, 8, 13];
+  <canvas width="300" height="300" id="pad"></canvas>
 
-var canvas = document.getElementById("pad"),
-context = canvas.getContext("2d");
+  <script type="text/javascript">
 
-var width = canvas.width,
-height = canvas.height,
-radius = Math.min(width, height) / 2;
+  var data = [1, 1, 2, 3, 5, 8, 13];
 
-var colors = function(){
-return "hsl(" + Math.random() * 360 + ",100%,50%)";
-} 
+  var canvas = document.getElementById("pad"),
+      context = canvas.getContext("2d");
 
-var arc = d3.arc()
-.outerRadius(radius - 10)
-.innerRadius(0)
-.context(context);
+  var width = canvas.width,
+      height = canvas.height,
+      radius = Math.min(width, height) / 2;
 
-var labelArc = d3.arc()
-.outerRadius(radius - 20)
-.innerRadius(radius - 20)
-.context(context);
+  var colors = function(){
+      return "hsl(" + Math.random() * 360 + ",100%,50%)";
+  } 
 
-var pie = d3.pie();
-var arcs = pie(data);
+  var arc = d3.arc()
+      .outerRadius(radius - 10)
+      .innerRadius(0)
+      .context(context);
 
-// move to center
-context.translate(width / 2, height / 2);   
+  var labelArc = d3.arc()
+      .outerRadius(radius - 20)
+      .innerRadius(radius - 20)
+      .context(context);
 
-// pie
-context.globalAlpha = 0.5;
-arcs.forEach(function(d, i) {
-  context.beginPath();
-  arc(d);
-  context.fillStyle = colors();
-  context.fill();
-});
 
-// num
-context.textAlign = "center";
-context.textBaseline = "middle";
-context.fillStyle = "#000";
-arcs.forEach(function(d, i) {
-var c = labelArc.centroid(d);
-context.fillText(data[i], c[0], c[1]);
-});
-</pre>
+
+  var pie = d3.pie();
+  var arcs = pie(data);
+
+  // move to center
+  context.translate(width / 2, height / 2);
+
+
+  // pie
+  context.globalAlpha = 0.5;
+  arcs.forEach(function(d, i) {
+    context.beginPath();
+    arc(d);
+    context.fillStyle = colors();
+    context.fill();
+  });
+
+  // num
+  context.textAlign = "center";
+  context.textBaseline = "middle";
+  context.fillStyle = "#000";
+  arcs.forEach(function(d, i) {
+      var c = labelArc.centroid(d);
+      context.fillText(data[i], c[0], c[1]);
+  });
+
+
+  </script>
+  <style>
+      canvas {
+      padding: 0;
+      margin: auto;
+      display: block;
+
+
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      }
+  </style>
