@@ -72,7 +72,7 @@ I did not use vim cause it's a little hard to walk in door, and SublimeText's se
 ### Leading Actor
 Last let's see the leading actor today - AutoHotKey
 
-I call it window's shell script ,like the shell script in linux. Cause I can do many auto things by it. It's a big tool to me and it helped me a lot. If you are interested to this software, I recommend you see this post:
+I call it window's shell script ,like the shell script in linux. Cause I can do many auto things by it. It's a big tool to me and it helped me a lot.
 
 
 
