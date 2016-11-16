@@ -18,3 +18,10 @@ I cleared my mind and make it follow steps:
 
 Word wrap is acheived!
 
+### 161116
+The third day.  
+The basic function has complete, but there are so many issues:
+- cannot distinguish row_pairs if line is bend. There is no 255 each row in bend area.
+- threshold must set for each photos, write a func can handle this.
+
+
