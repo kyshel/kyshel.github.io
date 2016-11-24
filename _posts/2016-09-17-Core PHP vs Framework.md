@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post_ks
 ---
 
 # 用原生php还是用框架

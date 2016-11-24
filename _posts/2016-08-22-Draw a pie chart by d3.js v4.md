@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post_ks
 ---
 
 # Draw-a-pie-chart-by-d3.js-v4

@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post_ks
 ---
 
 # 一次校招

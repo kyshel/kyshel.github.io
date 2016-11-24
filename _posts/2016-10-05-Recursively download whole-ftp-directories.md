@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post_ks
 ---
 
 # Recursively download whole-ftp-directories

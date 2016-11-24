@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post_ks
 ---
 
 # BeatCET6 track
