@@ -8,7 +8,7 @@ description: "Holy"
 
 # Secondary Parameters
 baseurl: "/"
-header-img: img/home-bg.jpg
+header-img: https://cloud.githubusercontent.com/assets/23516161/20644981/39eb54a4-b486-11e6-910b-461b7137aa2e.jpg
 headercolor: "#FFFFFF"
 logo: /project-pages/img/logos/Project-Pages-New-Logo-Inverted.png
 
