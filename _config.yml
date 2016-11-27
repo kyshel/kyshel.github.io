@@ -22,6 +22,8 @@ github_username:  kyshel
 # Build settings
 gems: [jekyll-paginate]
 markdown: kramdown
+kramdown:
+  input: GFM                            # use Github Flavored Markdown !important
 #highlighter: rouge
 #permalink: pretty
 paginate: 10
