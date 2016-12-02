@@ -1,6 +1,6 @@
 # Site settings
 title: Kyshel
-description: "."
+description: "I need another story."
 #url: "http://kyshel.me"
 
 
@@ -8,9 +8,9 @@ description: "."
 
 # Secondary Parameters
 baseurl: ""
-header-img: "https://cloud.githubusercontent.com/assets/23516161/20644981/39eb54a4-b486-11e6-910b-461b7137aa2e.jpg"
+header_img: lib/img/pies.jpg
 headercolor: "#FFFFFF"
-logo: /project-pages/img/logos/Project-Pages-New-Logo-Inverted.png
+#logo: logo.png
 
 # Tertiary Parameters
 github_username:  kyshel

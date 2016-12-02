@@ -1,5 +1,10 @@
 ---
 layout: post_ks
+title:      Install tesserocr
+author:     kyshel
+tags: 		install
+subtitle:  	For repo BeatCET6
+
 ---
 
 #Install tesserocr
