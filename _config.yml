@@ -8,9 +8,13 @@ description: "I need another story."
 
 # Secondary Parameters
 baseurl: ""
-header_img: lib/img/pies.jpg
+header_img: "/lib/img/pies.jpg"
 headercolor: "#FFFFFF"
 #logo: logo.png
+
+# Pages
+include: ['pages']
+
 
 # Tertiary Parameters
 github_username:  kyshel
