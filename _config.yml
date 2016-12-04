@@ -20,7 +20,7 @@ include: ['pages']
 github_username:  kyshel
 #project_repository: project-pages
 #disqus_shortname: project-pages
-#g-analytics: UA-75881392-1
+g-analytics: UA-86356266-1
 #altmetric: true
 
 # Build settings
