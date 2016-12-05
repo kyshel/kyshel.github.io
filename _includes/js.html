@@ -10,8 +10,12 @@
 <script src="{{ "/lib/js/blog.js" | prepend: site.baseurl }}"></script>
 <script type="text/javascript">
 
-anchors.options.visible = 'always';
-anchors.add('h2');
+var anchors = new AnchorJS({
+      placement: 'left',
+      visible: 'always'
+});
+
+anchors.add('#content h2');
 generateTableOfContents(anchors.elements);
 
 // External code for generating a simple dynamic Table of Contents
@@ -20,7 +24,7 @@ function generateTableOfContents(els) {
   		anchoredElHref,
 			ul = document.createElement('UL');
 
-  document.getElementById('table-of-contents').appendChild(ul);
+	document.getElementById('table-of-contents').appendChild(ul);
 
 	for (var i = 0; i < els.length; i++) {
   	anchoredElText = els[i].textContent;
