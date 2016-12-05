@@ -1,4 +1,51 @@
 <script src="/lib/js/jquery.min.js"></script>
 <script src="/lib/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+<script src="{{ "/lib/js/lunr.min.js" | prepend: site.baseurl }}"></script>
+<script src="{{ "/lib/js/search.js" | prepend: site.baseurl }}"></script>
+<script src="{{ "/lib/js/anchor.min.js" | prepend: site.baseurl }}"></script>
+
+
 <script src="{{ "/lib/js/blog.js" | prepend: site.baseurl }}"></script>
+<script type="text/javascript">
+
+anchors.options.visible = 'always';
+anchors.add('h2');
+generateTableOfContents(anchors.elements);
+
+// External code for generating a simple dynamic Table of Contents
+function generateTableOfContents(els) {
+	var anchoredElText,
+  		anchoredElHref,
+			ul = document.createElement('UL');
+
+  document.getElementById('table-of-contents').appendChild(ul);
+
+	for (var i = 0; i < els.length; i++) {
+  	anchoredElText = els[i].textContent;
+		anchoredElHref = els[i].querySelector('.anchorjs-link').getAttribute('href');
+  	addNavItem(ul, anchoredElHref, anchoredElText);
+  }
+}
+
+function addNavItem(ul, href, text) {
+  var listItem = document.createElement('LI'),
+		  anchorItem = document.createElement('A'),
+  	  textNode = document.createTextNode(text);
+  
+  anchorItem.href = href;
+  ul.appendChild(listItem);
+  listItem.appendChild(anchorItem);
+  anchorItem.appendChild(textNode);
+}
+
+
+</script>
+
+
+
+
+
+
 {% include analytics.html %}
