@@ -7,7 +7,7 @@ description: "I need another story."
 
 
 # Secondary Parameters
-baseurl: ""
+#baseurl: ""
 header_img: "/lib/img/pies.jpg"
 headercolor: "#FFFFFF"
 #logo: logo.png
@@ -28,8 +28,8 @@ gems: [jekyll-paginate]
 markdown: kramdown
 kramdown:
   input: GFM                            # use Github Flavored Markdown !important
-#highlighter: rouge
-#permalink: pretty
+highlighter: rouge
+permalink: pretty
 paginate: 10
 #exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
 
@@ -38,8 +38,8 @@ paginate: 10
 defaults:
   -
     scope:
-      path: "projects"
-      type: "pages"
+      path: "_posts"
+      type: "posts"
     values:
-      layout: "project"
-      header-img: "img/home-bg.jpg"
+      layout: "post_ks"
+      header-img: "/lib/img/pies.jpg"

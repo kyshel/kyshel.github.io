@@ -19,12 +19,15 @@ In CentOS7, run command below(here is 1.8.0):
 Then, Let's begin.
 
 1. Create new file named Box.class and add below code:
-    
-		public class Box {
-			public static void main(String[] args){
-				System.out.println("Hello, world !");
-			}
+
+	``` java   
+	public class Box {
+		public static void main(String[] args){
+			System.out.println("Hello, world !");
 		}
+	}
+	```
+
 2. Run  
 
 		# javac Box.java
