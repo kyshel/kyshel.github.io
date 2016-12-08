@@ -351,17 +351,13 @@ Absolutely! 上图就是利用json2table网站生成的表格，把目标数据�
 
 ## 总结
 这一路折腾的不少，主线如下：
+
 1. json数据结构制作
 2. php代码实现
 3. 生成真正的json文件
 4. 把json转成html表格
 5. 将html表格转成xls
 
-做完导出功能后，制作了如下小工具，欢迎使用！
-- json2xls(developing)
-
-完。
-
-
+-END-
 
 
