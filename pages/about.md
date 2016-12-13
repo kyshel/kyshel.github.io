@@ -7,9 +7,7 @@ header_img: "/lib/img/pies.jpg"
 ---
 
 ## Who
-Dreamer, Killer, Old driver, Fighter pilot, Singer.  
-Addcited to set fire.
-
+Dreamer, Killer, Old driver, Fighter pilot, Singer, Painter
 ## Where
 Nearby Pacific Ocean
 
