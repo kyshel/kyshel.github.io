@@ -184,6 +184,18 @@ layout: default
 	</div>
 </article>
 
+{% if site.duoshuo_username %}
+<!-- Duoshuo start -->
+<div class="comment">
+    <div class="ds-thread"
+	data-thread-key="{{page.id}}"
+	data-title="{{page.title}}"
+	data-url="{{site.url}}{{site.baseurl}}{{page.url}}" >
+    </div>
+</div>
+<!-- Duoshuo end -->
+{% endif %}
+
 <hr>
 
 
