@@ -47,8 +47,5 @@ DEPENDENCIES
   jekyll-paginate
   json (= 2.0.2)
 
-RUBY VERSION
-   ruby 2.0.0p598
-
 BUNDLED WITH
    1.13.6

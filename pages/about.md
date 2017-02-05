@@ -3,7 +3,6 @@ permalink: "/about/"
 layout: page
 title: "About"
 description: "Hey, this is kyshel"
-header_img: "/lib/img/pies.jpg"
 ---
 
 ## Who

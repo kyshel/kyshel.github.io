@@ -1,6 +1,4 @@
----
-layout: post_ks
----
+
 
 # Install PHP 5.6 by yum on CentOS7
 

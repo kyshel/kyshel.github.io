@@ -1,40 +1,17 @@
-# Site settings
+
 title: Kyshel
-description: "I need another story."
-#url: "http://kyshel.me"
+author: Kyshel
+url: http://kyshel.me
+baseurl:
 
-
-
-
-# Secondary Parameters
-#baseurl: ""
-header_img: "/lib/img/pies.jpg"
-headercolor: "#FFFFFF"
-#logo: logo.png
-
-# Pages
-include: ['pages']
-
-
-# Tertiary Parameters
-github_username:  kyshel
-#project_repository: project-pages
-#disqus_shortname: project-pages
-duoshuo_username: kyshel
 g-analytics: UA-86356266-1
-#altmetric: true
 
-# Build settings
 gems: [jekyll-paginate]
-markdown: kramdown
-kramdown:
-  input: GFM                            # use Github Flavored Markdown !important
-highlighter: rouge
-permalink: pretty
 paginate: 10
-#exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
-
-# Jekyll Settings
+markdown: kramdown
+permalink: pretty
+highlighter: rouge
+include: ['pages']
 
 defaults:
   -
@@ -42,5 +19,4 @@ defaults:
       path: "_posts"
       type: "posts"
     values:
-      layout: "post_ks"
-      header-img: "/lib/img/pies.jpg"
+      layout: "post"

@@ -1,6 +1,4 @@
----
-layout: post_ks
----
+
 
 
 # One key to save and run remote python code 
