@@ -14,6 +14,7 @@
 5. `bundle exec jekyll serve --host=0.0.0.0`
 
 ## Log
+- [v0.2](https://github.com/kyshel/kyshel.github.io/releases/tag/v0.2)
 - [v0.1](https://github.com/kyshel/kyshel.github.io/releases/tag/v0.1)
 
 
