@@ -1,7 +1,4 @@
 
-
-# Recursively download whole-ftp-directories
-
 - How to recursively download all files in a directory, with keeping the ftp's directory structure?
 
 First, I want to use python spider to do this. Python script parse links and download links.  
