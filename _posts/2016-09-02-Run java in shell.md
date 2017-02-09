@@ -2,11 +2,6 @@
 
 
 
-
-
-
-# Run java in shell
-
 Run java code in shell is simple.
 
 Before start, please make sure you has installed jdk.  
