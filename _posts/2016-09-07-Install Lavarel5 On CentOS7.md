@@ -1,6 +1,5 @@
 
 
-# Install Lavarel5 On CentOS7
 
 **1.Requirement**
 
