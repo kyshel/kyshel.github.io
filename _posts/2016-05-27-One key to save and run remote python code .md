@@ -1,7 +1,6 @@
 
 
 
-# One key to save and run remote python code 
 
 ### Condition
 - Local PC:      Windows 8.1
