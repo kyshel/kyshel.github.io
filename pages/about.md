@@ -1,6 +1,5 @@
 ---
 permalink: "/about/"
-layout: page
 title: "About"
 description: "Hey, this is kyshel"
 ---

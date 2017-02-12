@@ -1,11 +1,14 @@
+### your site title here
 
-title: Kyshel
-author: Kyshel
-url: http://kyshel.me
-baseurl:
+title: Kyshel - Blog
+baseurl:  # name of the repository
+email: a@a.com
 
-g-analytics: UA-86356266-1
 
+
+
+# Tracker
+analytics: UA-86356266-1
 gems: [jekyll-paginate]
 paginate: 10
 markdown: kramdown
@@ -20,3 +23,30 @@ defaults:
       type: "posts"
     values:
       layout: "post"
+  -
+    scope:
+      path: "pages"
+      type: "pages"
+    values:
+      layout: "post"
+
+
+
+
+#optimization
+#compress.html
+compress_html:
+  clippings: [html,div, p, ul, td, h1, h2, h3, h4,link, meta, footer, nav, img, header, hr, br, head, style, li, ul, ol, time, main, script, title]
+  comments: ["<!-- ", " -->"]
+  endings: [all]
+  ignore:
+    envs: [local]
+  blanklines: false
+  profile: false
+  startings: []
+  
+
+sass:
+ style: compressed
+
+
