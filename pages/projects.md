@@ -1,6 +1,6 @@
 ---
 title: Projects
-permalink: /projects
+permalink: /projects/
 ---
 
 - [Oie](https://github.com/kyshel/oie)    
