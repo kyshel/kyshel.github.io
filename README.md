@@ -1,6 +1,6 @@
 # Blog
 
-![image](https://cloud.githubusercontent.com/assets/11898075/22634421/89fa46b0-ec64-11e6-9c72-28a0467484d0.png)
+![me](https://cloud.githubusercontent.com/assets/11898075/22884353/7db58628-f22f-11e6-8fb0-1114c6297543.png)
 
 ## Link
 
@@ -19,7 +19,7 @@
 
 
 ## Credits
-Made with ❤ by [kyshel](http://github.com/kyshel) 
+Made with ❤ by [kyshel](http://github.com/kyshel)     
 Theme [hagura](https://github.com/sharu725/hagura)  
 Powered by [jekyll](https://github.com/jekyll/jekyll)  
 Hosted on [Github Pages](https://pages.github.com)  
