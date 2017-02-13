@@ -3,20 +3,10 @@ permalink: "/about/"
 title: "About"
 description: "Hey, this is kyshel"
 ---
+I am kyshel.
 
-## Who
-Dreamer, Killer, Old driver, Fighter pilot, Singer, Painter
+INTJ.
 
-## Where
-Nearby Pacific Ocean
-
-## Why
-Meant
-
-## What
-For extreme 
-
-## Which
-The long one
-
+You can find me at:
+- [GitHub.com/kyshel](https://github.com/kyshel)
 
