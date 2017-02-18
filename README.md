@@ -20,6 +20,6 @@
 
 ## Credits
 Made with ❤ by [kyshel](http://github.com/kyshel)     
-Theme [hagura](https://github.com/sharu725/hagura)  
+Theme from [dongyado](https://github.com/dongyado/dongyado.github.io)  
 Powered by [jekyll](https://github.com/jekyll/jekyll)  
 Hosted on [Github Pages](https://pages.github.com)  
