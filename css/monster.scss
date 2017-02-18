@@ -384,6 +384,35 @@ em {
     white-space: pre-wrap;
 }
 
+.post{
+    margin: 20px 0;
+}
+
+.post-title{
+    margin-bottom: 5px;
+}
+
+.post-meta {
+    margin-top: 5px;
+}
+
+.gray{
+    color: #999;
+}
+
+.pagination{
+    float: right;
+}
+
+.clear_both{
+    clear: both;
+}
+
+footer{
+    text-align: center;
+    margin: 20px auto;
+}
+
 @import "base";
 @import "syntax-highlighting";
 
