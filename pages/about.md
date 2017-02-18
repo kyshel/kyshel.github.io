@@ -2,6 +2,8 @@
 permalink: "/about/"
 title: "About"
 description: "Hey, this is kyshel"
+
+order: 4
 ---
 I am kyshel.
 

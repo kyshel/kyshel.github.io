@@ -1,6 +1,8 @@
 ---
 title: Projects
 permalink: /projects/
+
+order: 3
 ---
 
 - [Oie](https://github.com/kyshel/oie)    
