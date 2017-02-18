@@ -412,6 +412,11 @@ footer{
     margin: 20px auto;
 }
 
+.content a:hover{
+    color: #333333;
+    text-decoration: underline;
+}
+
 ::-webkit-scrollbar {
     -webkit-appearance: none;
     width: 8px;
