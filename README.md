@@ -1,6 +1,6 @@
 # Blog
 
-![me](https://cloud.githubusercontent.com/assets/11898075/22884353/7db58628-f22f-11e6-8fb0-1114c6297543.png)
+![image](https://cloud.githubusercontent.com/assets/11898075/23092210/e7fc07a8-f600-11e6-9714-26569a16faa1.png)
 
 ## Link
 
