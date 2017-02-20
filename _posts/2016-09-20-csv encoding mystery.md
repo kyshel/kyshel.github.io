@@ -8,9 +8,11 @@ csv文件全称为Comma-separated values，在用Excel处理csv文件时，经�
 ## 查看csv文件
 下面是用Python把数据写入csv文件的代码。
 
-    with open(file_name,'wb') as f:
-        writer = csv.writer(f)
-        writer.writerows(data_list)
+``` python
+with open(file_name,'wb') as f:
+    writer = csv.writer(f)
+    writer.writerows(data_list)
+```
 
 如果用记事本打开写入后的csv文件，得到的是以逗号为分隔符的raw data，如果某个字段的数据过长，整体的浏览体验很差。
 ![image](https://cloud.githubusercontent.com/assets/11898075/23133457/1b280aba-f7cc-11e6-98a6-12a06e509468.png)
