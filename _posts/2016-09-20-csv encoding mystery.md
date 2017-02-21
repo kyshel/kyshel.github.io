@@ -1,6 +1,6 @@
 --- 
-tags: [csv,excel]
-title: csv文件编码问题
+tags: [CSV,Excel]
+title: CSV文件编码问题
 ---
 
 csv文件全称为Comma-separated values，在用Excel处理csv文件时，经常会遇到一些棘手的编码问题。本文从查看csv文件和制作csv文件两个方面讨论。

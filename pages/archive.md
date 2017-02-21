@@ -2,7 +2,7 @@
 permalink: "/archive/"
 title: "Archive"
 layout: default
-order: 2
+order: 1
 ---
 
 <div>
