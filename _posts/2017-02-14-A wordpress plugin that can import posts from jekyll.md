@@ -18,8 +18,9 @@ tags: [Jekyll,Wordpress,Github API,PHP]
 
 目前完成的是单向同步，即Wordpress的文章跟随Jekyll来更新，文章比对暂时单纯地利用文件名来判断两端文章异同。
 
-这是一个演示视频（来自优酷）：    
-<iframe height=498 width=510 src='http://player.youku.com/embed/XMjUyMzMzODI4NA==' frameborder=0 'allowfullscreen'></iframe>
+这是一个演示视频（来自优酷）：
+
+<iframe height='498' width='510' src='http://player.youku.com/embed/XMjUyMzMzODI4NA==' frameborder=0 'allowfullscreen'></iframe>
 
 
 在Wordpress后台中，点击Analyze进行分析，分析完确定信息无误，点击Sync开始同步，大约会花费十秒到几十秒的时间（取决于Wordpress所在服务器与GitHub API服务器的响应时间），就可以看到Sync Success，这时候就可以去post列表中查看导入后的文章了。
