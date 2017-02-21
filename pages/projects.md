@@ -5,6 +5,8 @@ permalink: /projects/
 order: 3
 ---
 
+- [Sams](https://github.com/kyshel/sams)    
+  Sams is a Student Attendance Management System.
 - [Oie](https://github.com/kyshel/oie)    
   Oie is an Online Image Editor, based B/S architechture, browser as GUI, Python-OpenCV as core processor, PHP connect front-end and back-end.
 - [BeatCET6](https://github.com/kyshel/BeatCET6)    
@@ -17,3 +19,5 @@ order: 3
   An online jekyll editor, to manage posts hosted on Github Pages. [Demo](http://kyshel.me/jekyllor)
 - [Jekyll-Wordpress-Sync](https://github.com/kyshel/jekyll-wordpress-sync)  
   A wordpress plugin to import posts from a jekyll site. [Video](https://www.youtube.com/watch?v=nUq85s_qrVk&feature=youtu.be)
+- [nice-spider](https://github.com/kyshel/nice-spider)     
+  可以爬取oneniceapp.com的Python爬虫

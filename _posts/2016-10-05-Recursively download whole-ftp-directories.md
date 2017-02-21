@@ -1,3 +1,6 @@
+---
+tags: Shell
+---
 
 - How to recursively download all files in a directory, with keeping the ftp's directory structure?
 

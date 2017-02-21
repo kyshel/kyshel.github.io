@@ -1,43 +1,28 @@
-# 《代码的未来》Record
+---
+title: 《代码的未来》要点记录
+---
 
-## Prediction
+## 作者预测
 1. 摩尔定律已接近极限
 2. 计算机价格并不会大幅降低
 3. 计算机朝多CPU多核心方向发展，未来编程语言专注于如何充分利用CPU
 4. RAM、HDD消失，大规模的缓存取而代之
 5. C/S两端结构不断变化，S端由一个服务器变为多个服务器相连的云计算系统
 
-## Program Language
+## 编程语言
 
-### DSL Domain Specific Language 领域特定语言
+DSL Domain Specific Language 领域特定语言,是为特定领域所专门设计的词汇和语法。举例子：
+- 外部DSL XML,JSON,YAML,SQL,Regular expression
+- 内部DSL Rake file
 
-DSL是为特定领域所专门设计的词汇和语法。举例子：
+其他
+- 元编程 Meta,Lisp,Macro
+- 内存管理
+- 异常处理
+- 闭包
 
-* 外部DSL
-  * XML
-  * JSON
-  * YAML
-  * SQL
-  * Regular expression
-* 内部DSL
-  * Rake file
-
-### 元编程
-
-* Meta
-* Lisp
-  * Macro
-
-### 内存管理
-### 异常处理
-### 闭包
-
-## New Trend
-
-* Go
-* Dart
-* CoffeScript
-* Lua
+## 新潮流
+Go,Dart,CoffeScript,Lua
  
 编程语言及开发者的国籍
 
@@ -62,10 +47,9 @@ Lua |Roberto Ierusalimschy |巴西
 
 
 
-## Cloud Compute Era
+## 云计算时代
 
-### Communication between process
-
+进程间通信
 - Process: Running Program, Unique between others, No state save or thransfer, no share memory space
 - Thread: Multi threads can running in one process, they can cooperate, share memory space
 
@@ -78,9 +62,9 @@ Unix-Like ways to communicate:
 - UDP Socket
 - UNIX Domain Socket
 
-Socket Coding with C & Ruby
+Socket Coding： C & Ruby
 
-## Data Save
+### 数据存储
 
 数据存储方式经典的是Key-Value存储，就像关系型数据库。
 
@@ -89,17 +73,14 @@ Socket Coding with C & Ruby
 It's Not No need SQL, it's Not Only SQL.
 
 - Key-Value DB 
-- Document DB
-  * CouchDB
-  * MongoDB
+- Document DB : MongoDB, CouchDB
 - Object DB
 
 ### Memcached
 
 数据库中的数据大多放在磁盘上，当对数据库进行查询时，操作开销很大，而memcached将查询结果缓存在内存中，这样可以高性能。
 
-
-## Multi-Core
+### 多核
 
 1. 作者认为摩尔定律已经快接近极限，CPU已经不再单纯提高频率，而是朝着多核、多线程、多流水线发展。
 2. Pipe是20世纪中期出现的东西，然而多核CPU的出现却使Pipe更加高效。

@@ -1,5 +1,5 @@
 ---
-title: "JWS - 一个可同步Jekyll文章的Wordress插件"
+title: "JWS - 可同步Jekyll文章的Wordress插件"
 tags: [Jekyll,Wordpress,Github API,PHP]
 ---
 
@@ -13,16 +13,12 @@ tags: [Jekyll,Wordpress,Github API,PHP]
 也因此，.com搁置了好久都没有更新。
 
 所以，我就想能不能写个插件，实现他俩的同步呢？    
-这个时候，GitHub API就派上了用场，我可以通过api，GET到Jekyll的文章数据，然后比对Wordpress的文章，进行同步。    
-**插件地址：[github.com/kyshel/jekyll-wordpress-sync](https://github.com/kyshel/jekyll-wordpress-sync)**
+这个时候，GitHub API就派上了用场，我可以通过api，GET到Jekyll的文章数据，然后比对Wordpress的文章，进行同步。
 
-目前完成的是单向同步，即Wordpress的文章跟随Jekyll来更新，文章比对暂时单纯地利用文件名来判断两端文章异同。
+插件地址：[github.com/kyshel/jekyll-wordpress-sync](https://github.com/kyshel/jekyll-wordpress-sync)    
+演示视频：[http://player.youku.com/embed/XMjUyMzMzODI4NA==](http://player.youku.com/embed/XMjUyMzMzODI4NA==)
 
-这是一个演示视频：
-[http://player.youku.com/embed/XMjUyMzMzODI4NA==](http://player.youku.com/embed/XMjUyMzMzODI4NA==)
-
-
-在Wordpress后台中，点击Analyze进行分析，分析完确定信息无误，点击Sync开始同步，大约会花费十秒到几十秒的时间（取决于Wordpress所在服务器与GitHub API服务器的响应时间），就可以看到Sync Success，这时候就可以去post列表中查看导入后的文章了。
+目前已完成单向同步，即Wordpress的文章跟随Jekyll来更新，文章比对暂时单纯地利用文件名来判断两端文章异同。在Wordpress后台中，点击Analyze进行分析，分析完确定信息无误，点击Sync开始同步，大约会花费十秒到几十秒的时间（取决于Wordpress所在服务器与GitHub API服务器的响应时间），就可以看到Sync Success，这时候就可以去post列表中查看导入后的文章了。
 
 目前这个插件还在develop中，待加的功能有 
 - 利用Github的Webhook功能，实现更新Jekyll的文章后，同时自动更新wordpress的文章

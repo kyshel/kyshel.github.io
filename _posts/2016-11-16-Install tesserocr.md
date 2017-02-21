@@ -1,7 +1,6 @@
 ---
 title:      Install tesserocr
 author:     kyshel
-tags: 		Install
 subtitle:  	For repo BeatCET6
 ---
 

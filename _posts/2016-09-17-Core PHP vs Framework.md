@@ -1,6 +1,9 @@
+---
+title: 用原生php还是用框架
+tags: PHP
+---
 
 
-# 用原生php还是用框架
 
 >We assume that Core PHP means solving a Mathematical problem by using paper and pen. Frame work means solving Mathematical problem by using a calculator.  
 - Core PHP-Solving Mathematical Problem  

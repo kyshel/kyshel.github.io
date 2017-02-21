@@ -1,11 +1,11 @@
 ---
-title: Jekyll Wordpress Sync - 一个Wordpress插件的提交跟踪  
+title: Jekyll Wordpress Sync - Wordpress插件的提交跟踪  
 tags: Wordpress
 ---
 
 
 Jekyll Wordpress Sync 是一个可以导入Jekyll文章的Wordpress插件    
-插件地址: [github.com/kyshel/jekyll-wordpress-sync](https://github.com/kyshel/jekyll-wordpress-sync)     
+插件地址：  [github.com/kyshel/jekyll-wordpress-sync](https://github.com/kyshel/jekyll-wordpress-sync)     
 详细信息： [JWS - 一个可同步Jekyll文章的Wordress插件](http://kyshel.me/2017/02/14/A-wordpress-plugin-that-can-import-posts-from-jekyll/)       
 本文主要记录该插件的提交情况。
 
@@ -27,24 +27,22 @@ Jekyll Wordpress Sync 是一个可以导入Jekyll文章的Wordpress插件
 
 可以看出Wordpress插件团队还是相当有耐心来review提交的代码，我也解决关于使用PHP的一个困惑：用url直接访问文件是否会有问题，从邮件来看，问题还不小。
 
-对于上面3个问题，我的应对方法:
-- 删除kutil.php，它是方便我调试程序写的临时函数，现在可以去掉。
-- 按邮件中说的，在每个文件顶端加入：
+对于上面3个问题，我的应对方法:    
+1.删除kutil.php，它是方便我调试程序写的临时函数，现在可以去掉。    
+2.按邮件中说的，在每个文件顶端加入：   
 ``` php
 if(!defined('ABSPATH')) exit;  // Exit if accessed directly
 ```
-- 加上nonce字段，form直接加入`wp_nonce_field( 'delete-comment_'.$comment_id );`,ajax的话如下所示：
-``` php
-<?php
-//Set Your Nonce
-$ajax_nonce = wp_create_nonce( "my-special-string" );
-?>
 
+3.加上nonce字段，form直接加入 `wp_nonce_field( 'delete-comment_'.$comment_id );`     
+ajax的话如下所示：    
+
+``` html
 <script type="text/javascript">
 jQuery(document).ready(function($){
   var data = {
   action: 'my_action',
-  security: '<?php echo $ajax_nonce; ?>',
+  security: '<?php echo wp_create_nonce( "my-special-string" ); ?>',
   my_string: 'Hello World!'
   };
   $.post(ajaxurl, data, function(response) {
