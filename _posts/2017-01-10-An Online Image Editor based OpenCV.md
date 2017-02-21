@@ -1,5 +1,5 @@
 ---
-title:一个基于OpenCV的图像在线处理系统
+title: 一个基于OpenCV的图像在线处理系统
 tags: OpenCV PHP Python
 ---
 
