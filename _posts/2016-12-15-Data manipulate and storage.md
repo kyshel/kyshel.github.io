@@ -24,7 +24,7 @@ tags:
 把二维表的行看成x，列看成y，那么数据库又多了一个维度z。
 
 通过外键，表与表之间增加了约束，这样表之间就不是单独存在，而是相互依赖的了，字段之间建立起了联系，有利于数据引用的准确性。
-这个阶段中，我在dms中大量使用了外键，例如log表的user_name字段的外键为 user表的 user_name字段，如下图所示
+这个阶段中，我在dms中大量使用了外键，例如log表的user_name字段的外键为 user表的 user_name字段，如下图所示:    
 ![dms_users_logs_foreign_key](https://cloud.githubusercontent.com/assets/23516161/20884493/8f4788fe-bb26-11e6-95b7-0b03f00ef8d5.png)
 
 
