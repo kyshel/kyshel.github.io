@@ -5,10 +5,12 @@ permalink: /projects/
 order: 3
 ---
 
-- [Sams](https://github.com/kyshel/sams)    
-  Sams is a Student Attendance Management System.
+- [Django-Blog](https://github.com/kyshel/django-blog)     
+  A Blog system based django. [Preview](http://django-blog.kyshel.com/)
+- [Dms](https://github.com/kyshel/dms)     
+  DMS is a Dormitory Management System. [Preview](http://211.87.150.215/dms)
 - [Oie](https://github.com/kyshel/oie)    
-  Oie is an Online Image Editor, based B/S architechture, browser as GUI, Python-OpenCV as core processor, PHP connect front-end and back-end.
+  Oie is an Online Image Editor, based B/S architechture, browser as GUI, Python-OpenCV as core processor, PHP connect front-end and back-end. [Preview](http://115.159.55.151/oie)
 - [BeatCET6](https://github.com/kyshel/BeatCET6)    
   Aims to identify the words marked in photo, and translate them into chinese.
 - [LoginQUST](https://github.com/kyshel/LoginQUST)    
