@@ -1,5 +1,5 @@
 ---
-title: Jekyll Wordpress Sync - Wordpress插件的提交跟踪  
+title: 'Jekyll Wordpress Sync - Wordpress插件的提交跟踪'
 tags: Wordpress
 ---
 
