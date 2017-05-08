@@ -12,23 +12,25 @@
   		{% endif %}
 	  </article>
 		
-	<a class="btn btn-primary btn-lg" href="{{ site.repo_url }}/edit/{{ site.branch }}/{{ page.path }}" title="Help improve article {{ page.path }}">Edit</a>
-    </div>
+	</div>
 
 </div>
 
-<div class="article-meta">
-    {{ page.date | date: "%Y-%m-%d" }}
-    {% if page.categories.size > 0 %} • Category: 
-        {% for category in page.categories %}
-        <a href="/{{site.categories_path}}/#{{category}}-ref" >{{ category|capitalize }}</a>
-        {% endfor%}
-    {% endif %}
-    {% if page.tags.size > 0 %} • Tag: 
-        {% for tag in page.tags %}
-            <a href="/{{site.tags_path}}/#{{tag}}-ref" >{{ tag|capitalize }}</a>
-        {% endfor%}
-    {% endif %}
+<div>
+	<span><a class="btn btn-primary btn-lg" href="{{ site.repo_url }}/edit/{{ site.branch }}/{{ page.path }}" title="Help improve article {{ page.path }}">Edit</a></span>
+	<span class="article-meta">
+		{{ page.date | date: "%Y-%m-%d" }}
+		{% if page.categories.size > 0 %} • Category: 
+		{% for category in page.categories %}
+		<a href="/{{site.categories_path}}/#{{category}}-ref" >{{ category|capitalize }}</a>
+		{% endfor%}
+		{% endif %}
+		{% if page.tags.size > 0 %} • Tag: 
+		{% for tag in page.tags %}
+		    <a href="/{{site.tags_path}}/#{{tag}}-ref" >{{ tag|capitalize }}</a>
+		{% endfor%}
+		{% endif %}
+	</span>
 </div>
 
 {% if content and page.author_footer != false %}
