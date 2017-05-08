@@ -5,11 +5,12 @@ description: "Hey, this is kyshel"
 
 order: 5
 ---
-I am kyshel.
+This is kyshel.
 
-INTJ.
+Hunting response.
 
 You can find me at:
 
-- [GitHub.com/kyshel](https://github.com/kyshel)
+- [GitHub](https://github.com/kyshel)
+- [Twitter](https://twitter.com/kyshel2016)
 
