@@ -16,9 +16,9 @@
 
 </div>
 
-<div>
-	<span><a class="btn btn-primary btn-lg" href="{{ site.repo_url }}/edit/{{ site.branch }}/{{ page.path }}" title="Help improve article {{ page.path }}">Edit</a></span>
-	<span class="article-meta">
+<div class="article-meta">
+	<a class="btn btn-primary btn-lg" href="{{ site.repo_url }}/edit/{{ site.branch }}/{{ page.path }}" title="Help improve article {{ page.path }}">Edit</a>
+	<span style="float:right;">
 		{{ page.date | date: "%Y-%m-%d" }}
 		{% if page.categories.size > 0 %} • Category: 
 		{% for category in page.categories %}
@@ -32,6 +32,7 @@
 		{% endif %}
 	</span>
 </div>
+<div style="clear:both;"></div>
 
 {% if content and page.author_footer != false %}
 
