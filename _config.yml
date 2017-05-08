@@ -5,6 +5,10 @@ title: Kyshel - Blog
 # baseurl:  # name of the repository
 email: a@a.com
 
+# for edit button
+repo_url: https://github.com/kyshel/kyshel.github.io
+branch: master
+
 
 
 
