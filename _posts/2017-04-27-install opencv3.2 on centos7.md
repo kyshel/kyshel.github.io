@@ -30,7 +30,8 @@ ldconfig
 ## Run
 ```
 cd ~
-wget https://raw.githubusercontent.com/kyshel/template/master/hello_cv.cpp
+wget https://raw.githubusercontent.com/kyshel/template/master/src/hello_cv.cpp 
+wget https://raw.githubusercontent.com/kyshel/template/master/file/lena.jpg
 g++ -o hello_cv hello_cv.cpp `pkg-config opencv --cflags --libs` && ./hello_cv lena.jpg
 ```
 
