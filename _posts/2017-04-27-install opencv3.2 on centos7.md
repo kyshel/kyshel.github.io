@@ -6,13 +6,13 @@ yum install cmake gcc gtk2-devel numpy pkconfig
 
 ## Download
 ```
-wget https://github.com/opencv/opencv/archive/3.2.0.zip -O opencv3.2.zip
-unzip opencv3.2.zip
+wget https://github.com/opencv/opencv/archive/3.2.0.zip -O opencv-3.2.0.zip
+unzip opencv-3.2.0.zip
 ```
 
 ## Make
 ```
-cd opencv
+cd opencv-3.2.0
 mkdir build
 cd build
 cmake -D CMAKE_BUILD_TYPE=DEBUG -D CMAKE_INSTALL_PREFIX=/usr/local ..
