@@ -2,6 +2,7 @@
 permalink: "/about/"
 title: "About"
 description: "Hey, this is kyshel"
+comments: true
 
 order: 5
 ---
