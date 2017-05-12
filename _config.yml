@@ -1,5 +1,4 @@
-### your site title here
-
+# your site title here
 title: Kyshel - Blog
 # url: "http://kyshel.me"
 # baseurl:  # name of the repository
@@ -10,11 +9,9 @@ repo_url: https://github.com/kyshel/kyshel.github.io
 branch: master
 
 
-
-
 # Tracker
 google_analytics: UA-86356266-1
-duoshuo_username: kyshel
+disquso_username: kyshel
 
 gems: [jekyll-paginate]
 paginate: 10
