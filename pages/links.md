@@ -1,6 +1,7 @@
 ---
 title: Links
 permalink: /links/
+comments: true
 
 order: 3
 ---
