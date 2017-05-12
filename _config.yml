@@ -11,7 +11,7 @@ branch: master
 
 # Tracker
 google_analytics: UA-86356266-1
-disquso_username: kyshel
+disqus_username: kyshel
 
 gems: [jekyll-paginate]
 paginate: 10
