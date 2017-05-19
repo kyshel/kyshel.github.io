@@ -13,5 +13,5 @@ Requesting...
 You can find me at:
 
 - [GitHub](https://github.com/kyshel)
-- [Twitter](https://twitter.com/kyshel2016)
+
 
