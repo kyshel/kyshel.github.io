@@ -15,4 +15,5 @@ order: 3
   A viewer for sharing live code examples hosted on GitHub Gist.
 - [Jekyllor](http://kyshel.me/jekyllor)    
   An online jekyll editor, to manage posts hosted on Github Pages. 
+- [Add A New Post](https://github.com/kyshel/kyshel.github.io/new/master/_posts)
 
