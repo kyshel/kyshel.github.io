@@ -27,7 +27,7 @@ title: Compile OpenCV3.2 with VS2017 on Windows8.1
 1. In the same properties window,  -> Linker -> General -> Click the dropdown arrow to the right then click Edit
 1. Click the new folder icon and type: `$(OPENCV320_INSTALL_DIR)\x64\vc15\lib`
 1. In the same properties window, -> Linker > Input 
-1. Choose Additional Dependencies and add [Dependencies List](## Dependencies List)
+1. Choose Additional Dependencies and add [Dependencies List](#Dependencies List)
 1. Hit OK to close the properties window.
 1. Replace the code in your main file with the following:
 ``` c++
