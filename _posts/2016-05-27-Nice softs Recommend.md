@@ -15,5 +15,5 @@ I called it, Shell script in Windows
 1. [Subtitle Edit](https://github.com/SubtitleEdit/subtitleedit)    
 Enjoy creation.
 
-1. Potplayer
-It's the what's the player.
+1. Potplayer    
+It's the what's a player.
