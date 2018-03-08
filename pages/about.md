@@ -6,12 +6,15 @@ comments: true
 
 order: 5
 ---
-This is kyshel.
+Hi!This is kyshel.
 
-Requesting...
+An idealist & A ruler.
 
 You can find me at:
 
 - [GitHub](https://github.com/kyshel)
+- [Stackoverflow](https://stackoverflow.com/users/5944456/kyshel)
+
+
 
 
