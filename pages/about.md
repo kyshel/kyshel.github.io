@@ -6,7 +6,7 @@ comments: true
 
 order: 5
 ---
-Hi! This is kyshel.
+Hey! This is kyshel.
 
 An idealist & A ruler.
 
