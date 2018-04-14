@@ -11,6 +11,7 @@
 2. `gem install jekyll bundler`
 3. `git clone https://github.com/kyshel/kyshel.github.io.git`
 4. `cd kyshel.github.io`
+1. `bundle install`
 5. `bundle exec jekyll serve --host=0.0.0.0`
 
 ## Log
