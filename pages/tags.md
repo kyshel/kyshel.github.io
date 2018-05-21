@@ -1,7 +1,7 @@
 ---
 title: Tags
 permalink: "/tags/"
-layout: default
+
 order : 2
 ---
 
@@ -23,15 +23,4 @@ order : 2
 {% endfor %}
 </ul>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<script src="{{ site.baseurl }}/js/jquery.tagcloud.js" type="text/javascript" charset="utf-8"></script> 
-<script language="javascript">
-$.fn.tagcloud.defaults = {
-    size: {start: 14, end: 18, unit: 'pt'},
-      color: {start: '#CDE', end: '#F52'}
-};
-
-$(function () {
-    $('#tag_cloud a').tagcloud();
-});
-</script>
+<!-- to activate tag_cloud on, check /_includes/js_plugin.html -->

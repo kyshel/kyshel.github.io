@@ -2,78 +2,85 @@
 layout: default
 ---
 
-<ol class="post-list">
+<!-- posts start -->
+<main role="main" class="container">
+	<div class="row">
+		<div class="col-md-8 blog-main">
+			<br>
+
+			{% for post in paginator.posts %}
+
+			<div class="blog-post ">
+				<h2 class="blog-post-title "><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h2>
+				<p class="blog-post-meta">
+					<span class="post-date">
+						{{ post.date | date: "%Y-%m-%d" | upcase }}
+					</span>
+
+					<span class="post-author">
+						by {{site.username}}
+					</span>&nbsp;
+
+					<span class="post-tags">
+						{% if post.tags.size > 0 %}
+
+						{% for cat in post.tags %}
+						<a class="post-cat" href="/tags/#{{ cat }}">{{ cat }}</a>
+						{% unless forloop.last %}
+						<span>/</span>
+						{% endunless %}
+						{% endfor %}
+						{% endif %}
+					</span>
+				</p>
+
+				<div class="excerpt">
+					{{ post.content | strip_html  | truncate: 400 }}	
+				</div>
+
+				<a class="btn-border-small continue-read" href={{ post.url }}>Continue reading...</a>
+			</div>
+
+			{% endfor %}
 
 
-    <div class="posts">
-        {% for post in paginator.posts %}
-        <li>
-            <div class="post">
-                <h3 class="post-title"><a href="{{ post.url }}" title="访问 {{ post.title }}">{{ post.title }}</a></h3>
+			<!-- Pagination links start-->
+			<div class="blog-pagination">
+				{% if paginator.previous_page %}
+				<a href="{{ paginator.previous_page_path }}" class="btn btn-outline-primary previous">Previous</a>
+				{% else %}
+				<span class="btn btn-outline-secondary previous" diabled>Previous</span>
+				{% endif %}
+				<span class="page_number ">Page {{ paginator.page }} of {{ paginator.total_pages }}</span>
+				{% if paginator.next_page %}
+				<a href="{{ paginator.next_page_path }}" class="btn btn-outline-primary next">Next</a>
+				{% else %}
+				<span class="btn btn-outline-secondary next" diabled>Next</span>
+				{% endif %}
+			</div> <!-- Pagination links end-->
 
-                <div class="excerpt">{{ post.content | strip_html  | truncate: 200 }}&hellip;<a class="btn-border-small" href={{ post.url }}>Read More</a></div>
-
-
-                <p class="post-meta">
-                    <span class="home-post-date gray">
-                        {{ post.date | date: "%Y-%m-%d" | upcase }}
-                    </span>
-
-                    {% if post.categories.size > 0 %}
-                    •
-                    {% for cat in post.categories %}
-                    <a class="post-cat" href="{{ site.url }}/categories/#{{ cat }}">{{ cat }}</a>
-                    {% unless forloop.last %}
-                    <span>/</span>
-                    {% endunless %}
-                    {% endfor %}
-                    {% endif %}
-                </p>
-
-            </div>
-        </li>
-        <hr />
-        {% endfor %}
+		</div><!-- /.blog-main -->
 
 
+		{% include aside.html %}
+	</div><!-- /.row -->
 
-    <div class="pagination">
-        {% if paginator.previous_page %}
-        {% if paginator.previous_page == 1 %}
-        <a class="pagination-item newer" href="/">Previous</a>
-        {% else %}
-        <a class="pagination-item newer" href="/page{{paginator.previous_page}}">Previous</a>
-        {% endif %}
-        {% else %}
-        <span class="pagination-item newer">Previous</span>
-        {% endif %}
+</main> <!-- posts end -->
 
-        <span class="page_number ">{{ paginator.page }} / {{ paginator.total_pages }}</span>
-
-        {% if paginator.next_page %}
-        <a class="pagination-item older" href="/page{{paginator.next_page}}">Next</a>
-        {% else %}
-        <span class="pagination-item older">Next</span>
-        {% endif %}
-
-        <span class="gray">({{ paginator.total_posts }} posts)</span>
-    </div>
-    <div class="clear_both"></div>
-
-</li>
-</ol>
-
-
-
-<!-- remove escerpt blank lines -->
+<!-- remove excerpt blank lines start-->
 <script type="text/javascript">
-    var list = document.getElementsByClassName("excerpt");
-    var i;
-    for (i = 0; i < list.length; i++) {
-        list[i].innerHTML = list[i].innerHTML.split('\n').map(function(v) {
-            return v.trim()
-        }).filter(function(v) {
-            return v != '';
-        }).join('\n')
-    }
-</script>
+	var list = document.getElementsByClassName("excerpt");
+	var i;
+	for (i = 0; i < list.length; i++) {
+		list[i].innerHTML = list[i].innerHTML.split('\n').map(function(v) {
+			return v.trim()
+		}).filter(function(v) {
+			return v != '';
+		}).join('\n')
+	}
+</script> <!-- remove excerpt blank lines end-->
+
+
+
+
+

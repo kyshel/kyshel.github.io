@@ -1,0 +1,14 @@
+
+
+
+
+## queue 1
+
+- change post side bar to cata
+
+
+
+
+## queue 2
+
+- highlight, rouge add wrong span classes, should l-en, but nx added. For now use highlight js , but background quirk.

@@ -1,4 +1,47 @@
 ---
 layout: default
 ---
-{% include post.html %}
+
+<main role="main" class="container">
+	<div class="row">
+		<div class="col-md-8 blog-main">
+
+			<div class="blog-post">
+				<h1 class="blog-post-title-big">{{ page.title }}</h1>
+				<p class="blog-post-meta">
+					{{ page.date | date: "%Y-%m-%d" }}
+					by {{site.username}}
+					<span class="post-tags">
+						{% if page.tags.size > 0 %}
+						{% for cat in page.tags %}
+						<a class="post-cat" href="{{ site.url }}/tags/#{{ cat }}">{{ cat }}</a>
+						{% unless forloop.last %}
+						<span>/</span>
+						{% endunless %}
+						{% endfor %}
+						{% endif %}
+					</span>
+
+					{% if site.github_username %}
+
+
+					<span class="blog-post-edit">
+						<a href="{{ site.repo_url }}/edit/{{ site.branch }}/{{ page.path }}" title="Help improve article {{ page.path }}">Edit</a>
+					</span>
+					{% endif %}
+
+
+				</p>
+
+				<div class="content markdown-body">
+					{{content}}
+				</div>
+				
+			</div><!-- /.blog-post -->
+
+		</div><!-- /.blog-main -->
+
+		{% include aside.html %}
+
+	</div><!-- /.row -->
+</main><!-- /.container -->

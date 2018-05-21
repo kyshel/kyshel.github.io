@@ -3,17 +3,23 @@ title: Links
 permalink: /links/
 comments: true
 is_editable: true
-
 order: 3
 ---
 
-- [kyshel.me/ax](http://kyshel.me/ax)     
-  Ax it.
+### Projects
+
 - [kyshel.me/config](http://kyshel.me/config)    
   Commands for instant depoly.
+- [kyshel.me/ahk](http://kyshel.me/ahk)    
+  Scripts with HUGE productivity.
+
+
+### Gadgets
+
 - [GistLive](http://kyshel.me/GistLive)    
   A viewer for sharing live code examples hosted on GitHub Gist.
 - [Jekyllor](http://kyshel.me/jekyllor)    
-  An online jekyll editor, to manage posts hosted on Github Pages. 
-- [Add A New Post](https://github.com/kyshel/kyshel.github.io/new/master/_posts)
+  An online jekyll editor, to manage posts hosted on Github Pages. 
+
+
 

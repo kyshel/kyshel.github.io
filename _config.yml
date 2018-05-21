@@ -1,24 +1,49 @@
-# your site title here
-title: Kyshel | Hit the lights
-# url: "http://kyshel.me"
-# baseurl:  # name of the repository
-email: a@a.com
 
-# for edit button
+# identity
+username: kyshel  # meta-author, logo Button, post author, aside, footer
+github_username: kyshel 
+# remember about.md has id-info
+
+# site-info
+title: Kyshel - Hit the lights
+email: 
+description: >- # this means to ignore newlines
+  Kyshel's blog
+  Kyshel.me
+  kyshel github
+
+
+# url-info
+footer_url: https://kyshel.me
+# baseurl: "" # the subpath of your site, e.g. /blog
+# url: "" # the base hostname & protocol for your site, e.g. http://example.com
+
+# edit button
 repo_url: https://github.com/kyshel/kyshel.github.io
 branch: master
 
 
-# Tracker
-google_analytics: UA-86356266-1
-disqus_username: kyshel
 
-gems: [jekyll-paginate]
-paginate: 10
+
+
+# Build settings
 markdown: kramdown
-permalink: pretty
-highlighter: rouge
-include: ['pages']
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  auto_ids: true
+# theme: minima
+# highlighter: none # rouge if not set
+plugins:
+  - jekyll-feed
+
+# paginate
+plugins: [jekyll-paginate]
+paginate: 10
+
+# jquery_tag_cloud
+tags_path: tags
+
 
 defaults:
   -
@@ -33,19 +58,3 @@ defaults:
       type: "pages"
     values:
       layout: "page"
-
-kramdown:
-    syntax_highlighter: rouge
-    extensions: ["fenced_code_blocks", "autolink", "tables", "smart"]
-sass:
-    style: :compressed
-    sass_dir: _sass
-
-tags_path: tags
-
-
-
-  
-
-
-
