@@ -6,14 +6,17 @@ comments: true
 
 order: 5
 ---
-Hey! This is kyshel.
 
-An idealist & A ruler.
+Hey, this is kyshel.   
+An idealist & a visionary, who is crazy about \*nix & coding.   
+In spare time, I keen on cycling & film. And...  
+I need another story.
 
-You can find me at:
 
-- [GitHub](https://github.com/kyshel)
-- [Stackoverflow](https://stackoverflow.com/users/5944456/kyshel)
+U can ping me :
+
+- [@GitHub](https://github.com/kyshel)
+- [@Stackoverflow](https://stackoverflow.com/users/5944456/kyshel)
 
 
 

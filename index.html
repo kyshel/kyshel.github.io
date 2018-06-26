@@ -5,7 +5,7 @@ layout: default
 <!-- posts start -->
 <main role="main" class="container">
 	<div class="row">
-		<div class="col-md-8 blog-main">
+		<div class="col-md-8 blog-main toc-scope">
 			<br>
 
 			{% for post in paginator.posts %}
@@ -66,6 +66,11 @@ layout: default
 	</div><!-- /.row -->
 
 </main> <!-- posts end -->
+
+<div id="loading">
+  <img id="loading-image" src="https://loading.io/spinners/heart/index.beating-heart-preloader.svg" alt="Loading..." />
+</div>
+
 
 <!-- remove excerpt blank lines start-->
 <script type="text/javascript">
