@@ -27,6 +27,7 @@ branch: master
 
 
 # Build settings
+permalink: pretty
 markdown: kramdown
 kramdown:
   input: GFM
