@@ -10,7 +10,7 @@ order: 3
 
 - [kyshel.me/config](http://kyshel.me/config)    
   Commands for instant depoly.
-- [kyshel.me/ahk](http://kyshel.me/ahk)    
+- [kyshel.me/ahk](https://github.com/kyshel/ahk)    
   Scripts with HUGE productivity.
 
 
