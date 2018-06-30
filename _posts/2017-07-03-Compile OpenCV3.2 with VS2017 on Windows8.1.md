@@ -61,6 +61,7 @@ The project is now ready! Change "Path to Image" to a valid image path, and run 
 
 
 ## Dependencies List
+``` 
 opencv_surface_matching320d.lib
 opencv_text320d.lib
 opencv_tracking320d.lib
@@ -102,3 +103,4 @@ opencv_stereo320d.lib
 opencv_stitching320d.lib
 opencv_structured_light320d.lib
 opencv_superres320d.lib
+```
