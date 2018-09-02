@@ -75,8 +75,8 @@ Now comes another machine: C (A is ss-server, B is ss-client configured as 0x02)
 	``` sh
 	#!/bin/bash
 	if [ "$1" == "on" ]; then
-	        export http_proxy=http://127.0.0.1:8118
-	        export https_proxy=http://127.0.0.1:8118
+	        export http_proxy=http://B_ip:8118
+	        export https_proxy=http://B_ip:8118
 		echo 'http and https proxy has set to localhost:8118'
 	        curl ipinfo.io
 	elif [ "$1" == "off" ]; then
@@ -89,7 +89,7 @@ Now comes another machine: C (A is ss-server, B is ss-client configured as 0x02)
 	
 	```
 	
-The END
+3. run `. proxy_swtich.sh on` to enjoy C ~
 
 
 
