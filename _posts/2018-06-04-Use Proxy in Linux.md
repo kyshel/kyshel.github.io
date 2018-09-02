@@ -84,6 +84,10 @@ Now comes another machine: C (A is ss-server, B is ss-client configured as 0x02)
 	        export https_proxy=""
 		echo 'http and https proxy OFF'
 	else
+		echo 'http_proxy:'
+		echo http_proxy
+		echo 'https_proxy'
+		echo https_proxy
 	        echo 'Please input argument: on,off'
 	fi
 	
