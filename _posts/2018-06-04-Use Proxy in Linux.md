@@ -4,7 +4,7 @@ tags: [proxy]
 
 
 
-## 0x01 Make it work
+# 0x01 Make it work
 1. `wget https://bootstrap.pypa.io/get-pip.py && python get-pip.py`
 1. `pip install shadowsocks`
 1. `sslocal -s your-ss-ip -p 443 -k "your-ss-code" -l 1080 -m aes-256-cfb --user nobody -d start`
@@ -25,7 +25,7 @@ tags: [proxy]
 1. `chkconfig privoxy on && service privoxy start`
 1. `curl ipinfo.io` 
 
-## 0x02 Be elegant
+# 0x02 Be elegant
 
 1. save below code to a file like `ssclient`    
 	``` sh
@@ -89,7 +89,7 @@ Now comes another machine: C (A is ss-server, B is ss-client configured as 0x02)
 	
 	```
 	
-END
+The END
 
 
 
