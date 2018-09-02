@@ -4,7 +4,7 @@ tags: [proxy]
 
 
 
-## Make it work
+## 0x01 Make it work
 1. `wget https://bootstrap.pypa.io/get-pip.py && python get-pip.py`
 1. `pip install shadowsocks`
 1. `sslocal -s your-ss-ip -p 443 -k "your-ss-code" -l 1080 -m aes-256-cfb --user nobody -d start`
@@ -25,7 +25,7 @@ tags: [proxy]
 1. `chkconfig privoxy on && service privoxy start`
 1. `curl ipinfo.io` 
 
-## Be elegant
+## 0x02 Be elegant
 
 1. save below code to a file like `ssclient`    
 	``` sh
@@ -62,3 +62,36 @@ tags: [proxy]
 	curl ipinfo.io
 	echo ''
 	```
+	
+# 0x03 Another host comes
+An image that the stream flow:  
+- Listen: ss-server[socks 1080] --> privoxy(forward-socks5t[socks 1080]>listen-address[http,https 8118])
+- Request: application, like curl --> localhost[http,https 8118]  
+
+Now comes another machine: C (A is ss-server, B is ss-client configured as 0x02), let C join the play:
+
+1. on B, change `listen-address 127.0.0.1:8118` to `listen-address 0.0.0.0:8118` in `/etc/privoxy/config`
+2. on C, run `export http_proxy=http://127.0.0.1:8118; export https_proxy=http://127.0.0.1:8118`, or make a `proxy_switch.sh`:
+	``` sh
+	#!/bin/bash
+	if [ "$1" == "on" ]; then
+	        export http_proxy=http://127.0.0.1:8118
+	        export https_proxy=http://127.0.0.1:8118
+		echo 'http and https proxy has set to localhost:8118'
+	        curl ipinfo.io
+	elif [ "$1" == "off" ]; then
+	        export http_proxy=""
+	        export https_proxy=""
+		echo 'http and https proxy OFF'
+	else
+	        echo 'Please input argument: on,off'
+	fi
+	
+	```
+	
+END
+
+
+
+
+
