@@ -8,7 +8,7 @@ order: 3
 
 ### Projects
 
-- [kyshel.me/config](http://kyshel.me/config)    
+- [kyshel.me/config](http://kyshel.com/config)    
   Commands for instant depoly.
 - [kyshel.me/ahk](https://github.com/kyshel/ahk)    
   Scripts with HUGE productivity.
@@ -16,9 +16,9 @@ order: 3
 
 ### Gadgets
 
-- [GistLive](http://kyshel.me/GistLive)    
+- [GistLive](http://kyshel.com/GistLive)    
   A viewer for sharing live code examples hosted on GitHub Gist.
-- [Jekyllor](http://kyshel.me/jekyllor)    
+- [Jekyllor](http://kyshel.com/jekyllor)    
   An online jekyll editor, to manage posts hosted on Github Pages. 
 
 
