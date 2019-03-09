@@ -26,6 +26,14 @@ tags: [proxy]
 1. `curl ipinfo.io` 
 
 # 0x02 Be elegant
+1. `pip install shadowsocks`
+1. `yum -y install privoxy`
+1. `cp /etc/privoxy/config /etc/privoxy/config_bak`
+1. `vim /etc/privoxy/config`ensure below lines are not commented, line1 usually not, line2 need modify
+	```
+	listen-address 127.0.0.1:8118 
+	forward-socks5t / 127.0.0.1:1080 . 
+	```
 
 1. save below code to a file like `ssclient`    
 	``` sh
