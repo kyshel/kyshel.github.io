@@ -26,6 +26,7 @@ tags: [proxy]
 1. `curl ipinfo.io` 
 
 # 0x02 Be elegant
+## 2.1 CentOS version
 1. `pip install shadowsocks`
 1. `yum -y install privoxy`
 1. `cp /etc/privoxy/config /etc/privoxy/config_bak`
@@ -70,7 +71,61 @@ tags: [proxy]
 	curl ipinfo.io
 	echo ''
 	```
+
+
+## 2.2 Ubuntu Version
+1. install
+	```
+	sudo apt install python-pip git privoxy -y
+	pip install -U git+https://github.com/shadowsocks/shadowsocks.git@master
+	cp /etc/privoxy/config /etc/privoxy/config_bak
+	```
 	
+1. `vim /etc/privoxy/config` uncomment below line   
+	```
+	forward-socks5t / 127.0.0.1:9050 . 
+	```
+
+1. save below code to a file like `setproxy` , then `. setproxy on` means open,`. setproxy off` means shutdown   
+	``` sh
+	#!/bin/bash
+
+	ip=1.1.1.1
+	port=11111
+	key=123456
+
+	if [ "$1" == "on" ]; then
+		sslocal -s $ip -p $port -k $key -l 9050 -m aes-256-cfb --user nobody -d start
+		service privoxy start
+		export http_proxy=http://127.0.0.1:8118
+		export https_proxy=http://127.0.0.1:8118
+	elif [ "$1" == "off" ]; then
+		sslocal -s $ip -d stop
+		service privoxy stop
+		export http_proxy=""
+		export https_proxy=""
+	elif [ "$1" == "status" ]; then
+		service privoxy status
+	elif [ "$1" == "log" ]; then
+		tail -f /var/log/shadowsocks.log
+	elif [ "$1" == "test" ]; then
+		sslocal -s $ip -p $port -k $key -l 9050 -m aes-256-cfb
+
+	else
+		echo 'Please input argument: on,off,status'
+	fi
+	echo 'Now your ip is: '
+	curl ipinfo.io
+	echo ''
+	```
+
+
+
+
+
+
+
+
 # 0x03 Another host comes
 An image that the stream flow:  
 - Listen: ss-server[socks 1080] --> privoxy(forward-socks5t[socks 1080]>listen-address[http,https 8118])
