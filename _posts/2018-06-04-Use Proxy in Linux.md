@@ -33,7 +33,6 @@ tags: [proxy]
 	pip install shadowsocks
 	cp /etc/privoxy/config /etc/privoxy/config_bak
 	```
-
 	Ubuntu install
 	```
 	sudo apt install python-pip git privoxy -y
