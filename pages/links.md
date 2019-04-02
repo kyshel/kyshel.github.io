@@ -10,17 +10,13 @@ order: 3
 
 
 
-### Projects
 
 - [kyshel.me/config](http://kyshel.com/config)    
   Commands for instant depoly.
 - [kyshel.me/ahk](https://github.com/kyshel/ahk)    
   Scripts with HUGE productivity.
-
-
-### Gadgets
-
 - Globe <https://github.com/kyshel/globe>
+
 - openAllGR <https://github.com/kyshel/open_all_GR>
 
 
