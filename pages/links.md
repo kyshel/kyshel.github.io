@@ -11,9 +11,9 @@ order: 3
 
 
 
-- [kyshel.me/config](http://kyshel.com/config)    
+- <https://github.com/kyshel/etc>  
   Commands for instant depoly.
-- [kyshel.me/ahk](https://github.com/kyshel/ahk)    
+- <https://github.com/kyshel/ahk>
   Scripts with HUGE productivity.
 - Globe <https://github.com/kyshel/globe>
 
