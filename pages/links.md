@@ -20,8 +20,8 @@ order: 3
 
 ### Gadgets
 
-- Globe https://github.com/kyshel/globe
-- openAllGR https://github.com/kyshel/open_all_GR
+- Globe <https://github.com/kyshel/globe>
+- openAllGR <https://github.com/kyshel/open_all_GR>
 
 
 - [GistLive](http://kyshel.com/GistLive)    
