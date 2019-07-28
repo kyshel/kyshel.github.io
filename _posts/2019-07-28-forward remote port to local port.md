@@ -6,7 +6,7 @@ Is there anyway to achieve this? The answer is YES, as long as U have **another 
 
 # Let's do it
 
-the solution is very simple, just one-line command needs to be executed on friends server, as below:
+the solution is very simple, just a one-line command needs to be executed on friends server, as below:
 ```
 ssh  -N -R *:11111:localhost:22 root@CLOUD_SERVER_IP
 ```
@@ -36,8 +36,10 @@ ssh  -N -R *:11111:localhost:22 root@CLOUD_SERVER_IP
 After the command executed, the data will  be forwarded in this way:    
 my_pc --> CLOUD_SERVER --> friend's server
 
-Now run below in my_pc (USERNAME is login-able user that on friend's server )
-`ssh  USERNAME@CLOUD_SERVER_IP  -p 11111 `
+Now run below in my_pc (USERNAME is login-able user that on friend's server)
+```
+ssh  USERNAME@CLOUD_SERVER_IP  -p 11111 
+```
 
 Bingo~
 
