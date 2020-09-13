@@ -276,7 +276,7 @@ nav[data-toggle='toc'] {
    top: 0;
    left: 0;
    position: fixed;
-   display: block;
+   display: none;
    opacity: 1;
    background-color: white;
    z-index: 9000;
