@@ -81,7 +81,7 @@ zabbix类似服务端+客户端的结构，server作为服务端，汇总监控�
 
     
 
-1. 浏览器打开`http://server_ip_or_name`，按提示配置就可以，到配置数据库连接时，Database TLS encryption的勾去掉。注意如果连数据库时报identication failed错误，修改pg_hba.conf。最后登录时，默认的用户名密码为 Admin:zabbix
+1. 浏览器打开`http://server_ip_or_name`，按提示配置就可以，到配置数据库连接时，Database TLS encryption的勾去掉。注意如果连数据库时报identication failed错误，修改pg_hba.conf。最后登录时，默认的用户名密码为 Admin:zabbix  如果部署在公网上，请第一时间修改密码
 
 
 
@@ -96,3 +96,5 @@ agent支持的os就多了，包括windows、linux、moacOS、aix、freebsd等等
 
 -  https://www.zabbix.com/download?zabbix=5.0&os_distribution=centos&os_version=7&db=postgresql&ws=nginx
 -  https://www.zabbix.com/documentation/current/manual/installation/install#installing_frontend
+-  https://www.postgresql.org/docs/9.2/auth-pg-hba-conf.html
+-  https://linuxize.com/post/how-to-install-postgresql-on-centos-7/
