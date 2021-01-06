@@ -68,7 +68,13 @@ zabbix类似服务端+客户端的结构，server作为服务端，汇总监控�
     uncomment and set the right timezone  ` ; php_value[date.timezone] = Europe/Riga`
 
 
-    编辑pg_hba.conf，将127.0.0.1 设为trust   `vi /var/lib/pgsql/data/pg_hba.conf` 
+    编辑pg_hba.conf，将这两行的METHOD设为md5   `vi /var/lib/pgsql/data/pg_hba.conf`
+    ```
+    # "local" is for Unix domain socket connections only
+    local   all             all                                     md5
+    # IPv4 local connections:
+    host    all             all             127.0.0.1/32            md5
+    ```
 
 
 
