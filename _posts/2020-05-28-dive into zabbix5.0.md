@@ -81,7 +81,7 @@ zabbix类似服务端+客户端的结构，server作为服务端，汇总监控�
 
     
 
-1. 浏览器打开`http://server_ip_or_name`，按提示配置就可以，注意如果连数据库时报identication failed错误，修改pg_hba.conf。最后登录时，默认的用户名密码为 Admin:zabbix
+1. 浏览器打开`http://server_ip_or_name`，按提示配置就可以，到配置数据库连接时，Database TLS encryption的勾去掉。注意如果连数据库时报identication failed错误，修改pg_hba.conf。最后登录时，默认的用户名密码为 Admin:zabbix
 
 
 
