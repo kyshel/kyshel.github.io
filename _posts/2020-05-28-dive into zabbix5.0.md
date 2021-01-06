@@ -100,7 +100,8 @@ agent支持的os就多了，包括windows、linux、moacOS、aix、freebsd等等
 
 # reference
 
--  https://www.zabbix.com/download?zabbix=5.0&os_distribution=centos&os_version=7&db=postgresql&ws=nginx
--  https://www.zabbix.com/documentation/current/manual/installation/install#installing_frontend
--  https://www.postgresql.org/docs/9.2/auth-pg-hba-conf.html
--  https://linuxize.com/post/how-to-install-postgresql-on-centos-7/
+- https://www.zabbix.com/download?zabbix=5.0&os_distribution=centos&os_version=7&db=postgresql&ws=nginx
+- https://www.zabbix.com/documentation/current/manual/installation/install#installing_frontend
+- https://www.postgresql.org/docs/9.2/auth-pg-hba-conf.html
+- https://linuxize.com/post/how-to-install-postgresql-on-centos-7/
+- https://blog.zabbix.com/zabbix-agent-active-vs-passive/9207/
