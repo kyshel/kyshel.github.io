@@ -52,7 +52,7 @@ zabbix类似服务端+客户端的结构，server作为服务端，汇总监控�
 
     ```
 
-    Edit file /etc/zabbix/zabbix_server.conf  `DBPassword=password`
+    Edit file /etc/zabbix/zabbix_server.conf  `DBPassword=password` `DBHost=127.0.0.1`
 
     Edit file /etc/opt/rh/rh-nginx116/nginx/conf.d/zabbix.conf, uncomment and set 'listen' and 'server_name' directives. **server_name没有域名的话要换成ip**
 
