@@ -16,6 +16,12 @@ zabbix类似服务端+客户端的结构，server作为服务端，汇总监控�
 
 此处以from packages部署为例，简单写下部署过程。
 1. 首选选择平台，笔者选的是5.0 LTS的zabbix，os是CentO S7，数据库选的postgresql，web服务器选的nginx
+    ```
+    yum install postgres postgresql-server 
+    sudo postgresql-setup initdb
+    sudo systemctl start postgresql
+    sudo passwd postgres
+    ```
 2. bash内配置
     安装zabbix仓库
 
@@ -48,7 +54,7 @@ zabbix类似服务端+客户端的结构，server作为服务端，汇总监控�
 
     Edit file /etc/zabbix/zabbix_server.conf  `DBPassword=password`
 
-    Edit file /etc/opt/rh/rh-nginx116/nginx/conf.d/zabbix.conf, uncomment and set 'listen' and 'server_name' directives. 这个server_name没有域名的话要换成ip
+    Edit file /etc/opt/rh/rh-nginx116/nginx/conf.d/zabbix.conf, uncomment and set 'listen' and 'server_name' directives. **server_name没有域名的话要换成ip**
 
     ```
     # listen 80;
