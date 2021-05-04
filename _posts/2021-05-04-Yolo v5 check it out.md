@@ -1,6 +1,5 @@
-
 ---
-tags: [yolov5, machine-learning, object detection]
+tags: [yolov5, machine-learning, object detection]  
 title: Yolo v5, check it out!
 ---
 
