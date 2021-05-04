@@ -13,13 +13,8 @@ order: 3
 
 - <https://github.com/kyshel/etc>  
   Commands for instant depoly.
-- <https://github.com/kyshel/ahk>
+- <https://github.com/kyshel/ahk>   
   Scripts with HUGE productivity.
-- Globe <https://github.com/kyshel/globe>
-
-- openAllGR <https://github.com/kyshel/open_all_GR>
-
-
 - [GistLive](http://kyshel.com/GistLive)    
   A viewer for sharing live code examples hosted on GitHub Gist.
 - [Jekyllor](http://kyshel.com/jekyllor)    
