@@ -19,3 +19,7 @@ In this dataset, the first dimesion is images serial number, we call sample here
 In keras, the dataset's dimension can be get by .ndim method. And the shape can be get by .shape method.
 
 We can also change shape by .reshape. In the previous dataset, the shape is (samples, width, height), here is (10,16,16). If we want to change it to matrix, or to a table. We can change it to (10,16*16), and 10 means the number of samples, and 16 * 16 means features that each sample have.
+
+There is a long way to go for deep learning.
+
+Walk and do not stop.
